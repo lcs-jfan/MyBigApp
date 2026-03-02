@@ -11,7 +11,12 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C912C8902F56165A0035BE95 /* MyBigApp */ = {
+		C912C8B72F562BC90035BE95 /* HelperView */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HelperView;
+			sourceTree = "<group>";
+		};
+		C912C8CD2F562BD80035BE95 /* MyBigApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MyBigApp;
 			sourceTree = "<group>";
@@ -32,7 +37,7 @@
 		C912C8852F56165A0035BE95 = {
 			isa = PBXGroup;
 			children = (
-				C912C8902F56165A0035BE95 /* MyBigApp */,
+				C912C8B62F562BBD0035BE95 /* New Group */,
 				C912C88F2F56165A0035BE95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +48,15 @@
 				C912C88E2F56165A0035BE95 /* MyBigApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C912C8B62F562BBD0035BE95 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				C912C8B72F562BC90035BE95 /* HelperView */,
+				C912C8CD2F562BD80035BE95 /* MyBigApp */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,7 +75,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C912C8902F56165A0035BE95 /* MyBigApp */,
+				C912C8B72F562BC90035BE95 /* HelperView */,
+				C912C8CD2F562BD80035BE95 /* MyBigApp */,
 			);
 			name = MyBigApp;
 			packageProductDependencies = (
