@@ -34,12 +34,12 @@ struct WeatherView: View {
                 WeatherBlock(isRainy: false, temperature: "16 °C")
                 WeatherBlock(isRainy: true, temperature: "18 °C")
                 WeatherBlock(isRainy: true, temperature: "18 °C")
-                WeatherBlock(isRainy: true, temperature: "18 °C")
+                WeatherBlock(isRainy: false, temperature: "18 °C")
             }
             //slider
             Slider(value: $slideAmount, in: -150...150)
                 .padding()
-            //Packlist and button
+            //Packlist
             HStack() {
                 Text("   Packlist")
                     .font(.system(size: 30))
@@ -56,14 +56,22 @@ struct WeatherView: View {
                     }
 
                 }
-                .padding()
             }
+            //Item
+            VStack {
+                ListItems(itemName: "Water Bottle")
+                ListItems(itemName: "Snow Pants")
+            }
+
             Spacer()
         }
         
         
     }
 }
+
+
+
 
 #Preview {
     WeatherView()
