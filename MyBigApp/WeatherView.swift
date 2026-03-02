@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct WeatherView: View {
+    
+    @State private var slideAmount: CGFloat = 0
+
     var body: some View {
         NavigationStack {
             VStack{
@@ -25,11 +28,37 @@ struct WeatherView: View {
             //Place Holder
             Rectangle()
                 .frame(width: 200, height: 200)
-            Spacer()
+                .padding(5)
             //Weathers
-            ZStack {
-                <#code#>
+            HStack {
+                WeatherBlock(isRainy: false, temperature: "16 °C")
+                WeatherBlock(isRainy: true, temperature: "18 °C")
+                WeatherBlock(isRainy: true, temperature: "18 °C")
+                WeatherBlock(isRainy: true, temperature: "18 °C")
             }
+            //slider
+            Slider(value: $slideAmount, in: -150...150)
+                .padding()
+            //Packlist and button
+            HStack() {
+                Text("   Packlist")
+                    .font(.system(size: 30))
+                    .fontWeight(.bold)
+                Spacer()
+                Button(action: {}) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .containerRelativeFrame(.horizontal, count: 6, span: 1, spacing: 0)
+                            .containerRelativeFrame(.vertical, count: 19, span: 1, spacing: 0)
+                        Text("Clear all")
+                            .font(.system(size: 15))
+                            .tint(.white)
+                    }
+
+                }
+                .padding()
+            }
+            Spacer()
         }
         
         
@@ -39,3 +68,5 @@ struct WeatherView: View {
 #Preview {
     WeatherView()
 }
+
+
