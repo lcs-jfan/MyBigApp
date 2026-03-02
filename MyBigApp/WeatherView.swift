@@ -9,16 +9,31 @@ import SwiftUI
 
 struct WeatherView: View {
     var body: some View {
-        NavigationStack{
+        NavigationStack {
+            VStack{
+            }
+            //Profile button
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {}) {
+                        Image(systemName: "person.crop.circle")
+                    }
+                }
+            }
+            //Title
+            .navigationTitle("Weather +")
+            //Place Holder
             Rectangle()
-                .navigationTitle("Weather +")
-            
-            
-
+                .frame(width: 200, height: 200)
+            Spacer()
+            //Weathers
+            ZStack {
+                <#code#>
+            }
         }
-
+        
+        
     }
-
 }
 
 #Preview {
