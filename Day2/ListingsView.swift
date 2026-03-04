@@ -1,5 +1,5 @@
 //
-//  MyBigApp#2.swift
+//  ListingsView.swift
 //  MyBigApp
 //
 //  Created by Fan Yiming on 2026-03-04.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MyBigApp_2: View {
+struct ListingsView: View {
     var body: some View {
         NavigationStack{
             VStack{
@@ -18,13 +18,10 @@ struct MyBigApp_2: View {
                 Information(name: "2022 Chevrolet Bolt EV", description: "Blue - Front-wheel drive", price: "$28,000.00")
             }
             .navigationTitle("Listings")
-            //TabView
         }
     }
 }
 
 #Preview {
-    MyBigApp_2()
+    ListingsView()
 }
-
-

@@ -15,7 +15,10 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				HelperView/Information.swift,
-				"MyBigApp#2.swift",
+				HelperView/MyProfileView.swift,
+				LandingView2.swift,
+				ListingsView.swift,
+				SavedView.swift,
 			);
 			target = C912C88D2F56165A0035BE95 /* MyBigApp */;
 		};

@@ -17,7 +17,7 @@ struct Information: View {
         HStack {
             //Car icon
             ZStack {
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: 15)
                     .opacity(0.05)
                     .containerRelativeFrame(.horizontal, count: Int(7.5), span: 1, spacing: 0)
                     .containerRelativeFrame(.vertical, count: Int(11.5), span: 1, spacing: 0)
@@ -49,6 +49,7 @@ struct Information: View {
                 .opacity(0.3)
                 .padding(.trailing, 23)
         }
-        .padding(.top, 32)
+        Divider()
+            .frame(width: 350, height: 25)
     }
 }
