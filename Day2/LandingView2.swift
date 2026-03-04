@@ -29,7 +29,7 @@ struct LandingView2: View {
                     Image(systemName: "person.crop.circle")
                     Text("My Profile")
                 }
-                .tag(2)
+                .tag(3)
         }
     }
 }

@@ -11,14 +11,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C912C8E52F5873F10035BE95 /* Exceptions for "Day2" folder in "MyBigApp" target */ = {
+		C912C9182F587C870035BE95 /* Exceptions for "Day2" folder in "MyBigApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				HelperView/Information.swift,
-				HelperView/MyProfileView.swift,
 				LandingView2.swift,
-				ListingsView.swift,
-				SavedView.swift,
+				Views/ListingsView.swift,
+				Views/MyProfileView.swift,
+				Views/SavedView.swift,
 			);
 			target = C912C88D2F56165A0035BE95 /* MyBigApp */;
 		};
@@ -35,10 +35,10 @@
 			path = MyBigApp;
 			sourceTree = "<group>";
 		};
-		C912C8E22F5873F10035BE95 /* Day2 */ = {
+		C912C9122F587C870035BE95 /* Day2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				C912C8E52F5873F10035BE95 /* Exceptions for "Day2" folder in "MyBigApp" target */,
+				C912C9182F587C870035BE95 /* Exceptions for "Day2" folder in "MyBigApp" target */,
 			);
 			path = Day2;
 			sourceTree = "<group>";
@@ -59,7 +59,7 @@
 		C912C8852F56165A0035BE95 = {
 			isa = PBXGroup;
 			children = (
-				C912C8E22F5873F10035BE95 /* Day2 */,
+				C912C9122F587C870035BE95 /* Day2 */,
 				C912C8B62F562BBD0035BE95 /* New Group */,
 				C912C88F2F56165A0035BE95 /* Products */,
 			);
