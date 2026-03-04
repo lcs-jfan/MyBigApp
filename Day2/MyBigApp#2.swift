@@ -23,6 +23,18 @@ struct MyBigApp_2: View {
                             .font(.system(size: 32))
                             .foregroundStyle(Color.blue)
                     }
+                    //Text in the Middle
+                    VStack(alignment: .leading) {
+                        Text("2023 Tesla Model S")
+                            .font(.system(size: 18))
+                            .fontWeight(.bold)
+                        Text("White - All-wheel drive")
+                            .font(.system(size: 17))
+                            .opacity(0.5)
+                        Text("$75,000.00")
+                            .font(.system(size: 21))
+                            .fontWeight(.bold)
+                    }
                 }
             }
             .navigationTitle("Listings")
