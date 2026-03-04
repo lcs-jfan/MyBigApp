@@ -23,6 +23,8 @@ struct MyBigApp_2: View {
                             .font(.system(size: 32))
                             .foregroundStyle(Color.blue)
                     }
+                    .padding(.leading, 23)
+                    .padding(.trailing, 4)
                     //Text in the Middle
                     VStack(alignment: .leading) {
                         Text("2023 Tesla Model S")
@@ -35,6 +37,14 @@ struct MyBigApp_2: View {
                             .font(.system(size: 21))
                             .fontWeight(.bold)
                     }
+                    //Spacer
+                    Spacer()
+                    //right chevron
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 18))
+                        .fontWeight(.bold)
+                        .opacity(0.3)
+                        .padding(.trailing, 23)
                 }
             }
             .navigationTitle("Listings")
