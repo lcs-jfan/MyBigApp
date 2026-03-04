@@ -29,7 +29,7 @@ struct Information: View {
             .padding(.leading, 23)
             .padding(.trailing, 4)
             //Text in the Middle
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 3) {
                 Text(name)
                     .font(.system(size: 18))
                     .fontWeight(.bold)
