@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C912C8D62F586D620035BE95 /* MyBigApp#2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C912C8D52F586D620035BE95 /* MyBigApp#2.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C912C88E2F56165A0035BE95 /* MyBigApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBigApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C912C8D52F586D620035BE95 /* MyBigApp#2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyBigApp#2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -37,6 +42,7 @@
 		C912C8852F56165A0035BE95 = {
 			isa = PBXGroup;
 			children = (
+				C912C8D42F586D500035BE95 /* Day2 */,
 				C912C8B62F562BBD0035BE95 /* New Group */,
 				C912C88F2F56165A0035BE95 /* Products */,
 			);
@@ -57,6 +63,14 @@
 				C912C8CD2F562BD80035BE95 /* MyBigApp */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		C912C8D42F586D500035BE95 /* Day2 */ = {
+			isa = PBXGroup;
+			children = (
+				C912C8D52F586D620035BE95 /* MyBigApp#2.swift */,
+			);
+			path = Day2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C912C8D62F586D620035BE95 /* MyBigApp#2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,24 @@ import SwiftUI
 
 struct MyBigApp_2: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack{
+                HStack {
+                    //Car icon
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .opacity(0.05)
+                            .containerRelativeFrame(.horizontal, count: 6, span: 1, spacing: 0)
+                            .containerRelativeFrame(.vertical, count: Int(10), span: 1, spacing: 0)
+                            .foregroundStyle(Color.blue)
+                        Image(systemName: "car.fill")
+                            .font(.system(size: 32))
+                            .foregroundStyle(Color.blue)
+                    }
+                }
+            }
+            .navigationTitle("Listings")
+        }
     }
 }
 

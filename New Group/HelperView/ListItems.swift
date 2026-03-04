@@ -13,10 +13,9 @@ struct ListItems: View {
     
     var body: some View {
         HStack {
-            Text("     ")
             Text(itemName)
                 .font(.system(size: 23))
-            Text("                                        ")
+            Spacer()
             Button(action: {}) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
@@ -29,5 +28,7 @@ struct ListItems: View {
 
             }
         }
+        .padding(.top, 1/2)    // 50 points at the top
+        .padding(.leading, 5)
     }
 }

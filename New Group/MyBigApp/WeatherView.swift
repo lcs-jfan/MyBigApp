@@ -17,7 +17,7 @@ struct WeatherView: View {
             }
             //Profile button
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItem(placement: .topBarTrailing) {
                     Button(action: {}) {
                         Image(systemName: "person.crop.circle")
                     }
